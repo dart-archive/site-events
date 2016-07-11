@@ -1,0 +1,49 @@
+/**
+ * animate fadein mixin
+ */
+
+@-webkit-keyframes fadeIn {
+    0% {
+        margin-left: -30px;
+        opacity: 0;
+    }
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        margin-left: -30px;
+        opacity: 0;
+    }
+    100% {
+        margin-left: 0;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+
+.fadeIn(@animationDelay: 0) {
+    .animation-duration(.25s);
+    .animation-delay(@animationDelay);
+    .animation-fill-mode(both);
+    .animation-name("fadeIn");
+}
+
+.fadeOut(@animationDelay: 0) {
+    .animation-duration(.25s);
+    .animation-delay(@animationDelay);
+    .animation-fill-mode(both);
+    .animation-name("fadeOut");
+}

@@ -1,0 +1,49 @@
+/**
+ * Base: Typography
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: @header-font-family;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 40px;
+    font-weight: bold;
+
+    @media (min-width:@screen-sm) {font-size: 50px;}
+    @media (min-width:@screen-md) {font-size: 60px;}
+    @media (min-width:@screen-lg) {font-size: 70px;}
+    @media (min-width:@screen-xl) {font-size: 80px;}
+}
+
+h2 {
+    font-size: 30px;
+
+    @media (min-width:@screen-sm) {font-size: 40px;}
+}
+
+h3 {
+    font-size: 16px;
+
+    @media (min-width:@screen-sm) {font-size: 24px;}
+}
+
+p.lead {
+    font-weight: bold;
+    font-size: 14px;
+
+    @media (min-width:@screen-sm) {font-size: 21px;}
+}
+
+bold,
+strong {
+    font-weight: 700;
+}
+
+p,
+ul {margin-bottom: 30px;}

@@ -1,0 +1,115 @@
+/**
+ * Settings: Variables
+ */
+
+
+/* Colors
+********************/
+@color-teal:                    #00b4aa;
+@color-blue:                    #0076be;
+@color-blue-dark:               #006698;
+@color-blue-light:              #00a7e1;
+@color-orange:                  #f24017;
+
+@color-primary:                 @color-blue-light;
+@color-secondary:               @color-orange;
+
+@color-link:                    @color-teal;
+@color-text:                    @color-gray-darkest;
+@color-mute:                    #e0e0e0;
+
+@color-gray-darkest:            #333333;
+@color-gray-dark:               #bbbbbb;
+@color-gray:                    #dddddd;
+@color-gray-light:              #eeeeee;
+@color-gray-lightest:           #F7F7F7;
+@color-white:                   #ffffff;
+
+@color-input-text:              @color-gray;
+@color-input-bg:                @color-white;
+@color-input-border:            @color-gray-dark;
+@color-input-bg-disabled:       #888888;
+
+@color-placeholder:             #999999;
+
+
+/* Layout
+********************/
+@site-background-color:         @color-white;
+
+
+/* Typography
+********************/
+@base-font-family:              "Roboto";
+@base-font-size:                16px;
+@base-font-weight:              300;
+@header-font-family:            @base-font-family;
+
+
+/* Grid
+********************/
+@gutter:                        30px;
+@gutter-xs:                     @gutter;
+@gutter-ms:                     @gutter;
+@gutter-sm:                     @gutter;
+@gutter-md:                     @gutter;
+@gutter-lg:                     @gutter;
+
+@grid-columns:                  12;
+
+// Small screen / tablet
+@container-tablet:              (720px + @gutter);
+@container-sm:                  @container-tablet;
+
+// Medium screen / desktop
+@container-desktop:             (940px + @gutter);
+@container-md:                  @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop:       (1140px + @gutter);
+@container-lg:                  @container-large-desktop;
+
+// Xtralarge screen / wide desktop
+@container-xlarge-desktop:      (1540px + @gutter);
+@container-xl:                  @container-xlarge-desktop;
+
+
+/* Media query breakpoints
+********************/
+// Extra small screen / phone
+@screen-xs:                     480px;
+@screen-xs-min:                 @screen-xs;
+@screen-phone:                  @screen-xs-min;
+
+// Small medium screen / phablet, large phones
+@screen-ms:                     480px;
+@screen-ms-min:                 @screen-ms;
+//** Deprecated `@screen-ms-desktop` as of v3.0.1
+@screen-ms-desktop:             @screen-ms-min;
+
+// Small screen / tablet
+@screen-sm:                     768px;
+@screen-sm-min:                 @screen-sm;
+@screen-tablet:                 @screen-sm-min;
+
+// Medium screen / desktop
+@screen-md:                     992px;
+@screen-md-min:                 @screen-md;
+@screen-desktop:                @screen-md-min;
+
+// Large screen / wide desktop
+@screen-lg:                     1200px;
+@screen-lg-min:                 @screen-lg;
+@screen-lg-desktop:             @screen-lg-min;
+
+// Large screen / wide desktop
+@screen-xl:                     1600px;
+@screen-xl-min:                 @screen-xl;
+@screen-xl-desktop:             @screen-xl-min;
+
+// So media queries don't overlap when required, provide a maximum for each breakpoint
+@screen-xs-max:                 (@screen-ms-min - 1);
+@screen-ms-max:                 (@screen-sm-min - 1);
+@screen-sm-max:                 (@screen-md-min - 1);
+@screen-md-max:                 (@screen-lg-min - 1);
+@screen-lg-max:                 (@screen-xl-min - 1);

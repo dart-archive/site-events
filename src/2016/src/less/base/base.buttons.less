@@ -1,0 +1,98 @@
+/**
+ * Base: Buttons
+ */
+
+// Default styling
+.button {
+    display: inline-block;
+    margin-bottom: 0; // For input.btn
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    white-space: nowrap;
+    .user-select(none);
+    position: relative;
+    text-decoration: none;
+
+    // Misc, fixes etc.
+    &,
+    &:active,
+    &.active {
+        &:focus,
+        &.focus {outline: none;}
+    }
+
+    &:active,
+    &.active {outline: 0;}
+
+    &.disabled,
+    &[disabled] {cursor: disabled;}
+
+    a& {
+        text-decoration: none;
+
+        &.disabled,
+        fieldset[disabled] & {pointer-events: none;} // Future-proof disabling of clicks on `<a>` elements
+    }
+
+
+    // Default button
+    & {
+        font-weight: 500;
+        font-family: @base-font-family;
+        padding: 9px 42px;
+        border-radius: 30px;
+        color: @color-white;
+        background: @color-secondary;
+        border: 1px solid transparent;
+        .transition(all .3s);
+
+        &:before {
+            content: "";
+            border: 2px solid transparent;
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            border-radius: 30px;
+            width: calc(~"100% - 12px");
+            height: calc(~"100% - 12px");
+            .transition(all .3s);
+        }
+
+        &:hover,
+        &:focus,
+        &.focus {
+            color: @color-secondary;
+            background: transparent;
+            text-decoration: none;
+
+            &:before {
+                top: -2px;
+                left: -2px;
+                width: calc(~"100% + 4px");
+                height: calc(~"100% + 4px");
+                border-color: @color-secondary;
+            }
+        }
+    }
+
+    // Large button
+    &--large {
+        font-size: 24px;
+        border-radius: 40px;
+        padding: 9px 62px;
+
+        &:before {border-radius: 40px;}
+    }
+
+    // secondary button
+    &--secondary {
+        &:hover {
+            color: @color-white;
+
+            &:before {border-color: @color-white;}
+        }
+    }
+}

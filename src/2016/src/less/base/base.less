@@ -1,0 +1,55 @@
+/**
+ * Base
+ */
+
+/* #box-sizing
+********************/
+* {
+    .box-sizing(border-box);
+
+    &:before,
+    &:after {.box-sizing(border-box);}
+}
+
+
+/* #html
+********************/
+
+
+
+/* #body
+********************/
+body {
+    background-color: @site-background-color;
+    font-family: @base-font-family;
+    font-weight: @base-font-weight;
+    font-size: @base-font-size;
+    color: @color-text;
+    line-height: 1.5;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+
+/* #links
+********************/
+a {
+    color: @color-link;
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {color: darken(@color-link, 10%);}
+}
+
+
+/* #image handling
+********************/
+figure {
+    margin: 0;
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        display: block;
+    }
+}

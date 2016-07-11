@@ -1,0 +1,45 @@
+/**
+ * Section: Practical information
+ */
+
+.info {
+    background: @color-gray-lightest;
+    padding: 40px 0 20px;
+
+    @media (min-width:@screen-sm) {
+        padding: 70px 0 50px;
+    }
+}
+
+.info-description {
+    padding: 20px;
+    margin-bottom: 30px;
+
+    &__question {
+        display: block;
+        font-weight: 500;
+    }
+
+    &__answer {display: block;}
+}
+
+.info-list {
+    display: -webkit-flex;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+}
+
+.info-item {
+    padding: 20px;
+    float: left;
+
+    @media (min-width:@screen-xs) {width: 50%;}
+
+    &__question {
+        display: block;
+        font-weight: 500;
+    }
+
+    &__answer {display: block;}
+}

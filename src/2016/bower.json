@@ -1,0 +1,10 @@
+{
+  "name": "Google Dart Developer Summit 2016 - Website",
+  "version": "1.0.0",
+  "author": "Beneath",
+  "dependencies": {},
+  "devDependencies": {
+    "jQuery": "^2.2.3",
+    "jquery.easing": "^1.3.1"
+  }
+}

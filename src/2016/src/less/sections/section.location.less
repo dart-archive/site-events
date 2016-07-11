@@ -1,0 +1,62 @@
+/**
+ * Section: Location
+ */
+
+.location {
+    background: url(../images/location-geometry.svg) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    max-height: 900px;
+    position: relative;
+    color: @color-white;
+    padding: 40px 0;
+
+    @media (min-width:@screen-sm) {padding: 70px 0;}
+}
+
+
+.location-content {
+    background: url(../images/location-silhouette.svg) center bottom no-repeat;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 900px;
+
+    @media (min-width:@screen-xl) {background-size: 50%;}
+
+    &__inner {
+        text-align: center;
+        padding-top: 200px;
+
+        @media (min-width:@screen-xl) {padding-top: 250px;}
+    }
+
+    &__logo {
+        max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @media (min-width:@screen-sm) {max-width: 200px;}
+    }
+
+    &__address {
+        display: block;
+        color: @color-white;
+        text-align: center;
+        font-size: 24px;
+
+        @media (min-width:@screen-sm) {font-size: 30px;}
+    }
+
+    &__city {
+        display: block;
+        color: @color-white;
+        font-size: 24px;
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+}
