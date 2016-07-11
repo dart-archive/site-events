@@ -1,0 +1,9 @@
+
+# Node modules installed by bower
+node_modules
+
+
+
+# IntelliJ project files
+.idea
+*.iml
