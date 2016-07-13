@@ -1,13 +1,13 @@
 {
   "hosting": {
     "public": "publish",
-    "cleanUrls": false
-  },
-  "redirects": [
-    {
-      "source": "/",
-      "destination": "/2016/summit/",
-      "type": 302
-    }
-  ]
+    "cleanUrls": false,
+    "redirects": [
+      {
+        "source": "/",
+        "destination": "/2016/summit/",
+        "type": 302
+      }
+    ]
+  }
 }
