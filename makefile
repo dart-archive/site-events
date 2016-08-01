@@ -1,28 +1,27 @@
-default:
-	echo "Please run make clean, make build or make deploy"
+build: publish/2016/summit/** publish/404.html
+	@echo "=== Site built ==="
 
-deploy: build
+deploy: publish/**
 	firebase deploy
 
-build: summit2016 error404
+serve: publish/**
+	firebase serve
 
-error404: mkdir_publish
+publish/404.html: publish/
 	cp src/404.html publish
 
-summit2016: summit2016_gulp mkdir_publish
+publish/2016/summit/**: src/2016/dist/** publish/
 	mkdir -p publish/2016/summit/
 	cp -r src/2016/dist/* publish/2016/summit/
 
-summit2016_gulp: summit2016_bower
+src/2016/dist/**: src/2016/node_modules/** src/2016/gulpfile.js
 	cd src/2016 && gulp
 
-summit2016_bower: summit2016_npm
+src/2016/node_modules/**: src/2016/.bowerrc src/2016/bower.json src/2016/package.json
+	cd src/2016 && npm install
 	cd src/2016 && bower install
 
-summit2016_npm:
-	cd src/2016 && npm install
-
-mkdir_publish:
+publish/:
 	mkdir -p publish
 
 clean:
