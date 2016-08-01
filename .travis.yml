@@ -2,6 +2,7 @@ language: dart
 sudo: false
 
 install:
+  - npm install -g npm@2
   - npm install -g firebase-tools
   - pub global activate linkcheck
 
