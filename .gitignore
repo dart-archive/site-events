@@ -7,3 +7,5 @@ publish
 # IntelliJ project files
 .idea
 *.iml
+
+*.intermediate
