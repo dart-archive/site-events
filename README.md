@@ -2,11 +2,11 @@
 
 This is where events microsites live.
 
+## Development
+
+Run `make build` in root directory. The generated site will be in `publish`. 
+You can run `firebase serve` to preview the site on localhost.
+
 ## Deployment
 
-Run `firebase deploy` in root directory.
-
-## TODO
-
-Stop tracking publish/ directory after creating a script that builds to
-that directory from all src/ subdirectories.
+Run `make deploy` in root directory.
