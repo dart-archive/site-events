@@ -7,10 +7,10 @@ DDS_2016_FINAL := $(wildcard publish/2016/summit/**)
 build: .summit2016.intermediate publish/404.html
 	@echo "=== Site built ==="
 
-deploy: publish/**
+deploy: .summit2016.intermediate publish/404.html
 	firebase deploy
 
-serve: publish/**
+serve: .summit2016.intermediate publish/404.html
 	firebase serve
 
 publish/404.html: publish
