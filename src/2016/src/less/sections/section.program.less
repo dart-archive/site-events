@@ -1,0 +1,76 @@
+/**
+ * Section: Location
+ */
+
+.program {
+    background: @color-blue-light;
+    padding: 40px 0;
+    color: @color-white;
+}
+
+.program-section{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    @media(min-width:@screen-sm){
+        display: table;
+        width: 100%;
+    }
+    &__item{
+        display: block;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        padding: 15px 0;
+        @media(min-width:@screen-sm){
+            display: table-row;
+            border: 0 none;
+        }
+        .program-timeslot,
+        .program-title,
+        .program-speaker{
+            display: block;
+            @media(min-width:@screen-sm){
+                display: table-cell;
+                border-bottom: 1px solid rgba(255,255,255,.3);
+                padding: 10px;
+            }
+        }
+        .program-timeslot{
+            @media(min-width:@screen-sm){
+                width: 90px;
+            }
+        }
+        .program-title{
+            font-weight: 500;
+            .program-type{
+                padding:2px 5px;
+                background: rgba(255,255,255,.3);
+                margin-right: 10px;
+            }
+            @media(min-width:@screen-sm){
+
+            }
+        }
+        .program-speaker{
+            @media(min-width:@screen-sm){
+                white-space: nowrap;
+            }
+        }
+    }
+
+    &--break{
+
+        .program-timeslot,
+        .program-title,
+        .program-speaker{
+            color:rgba(0, 0, 0, .5);
+            @media(min-width:@screen-sm){
+                padding:30px 10px;
+            }
+        }
+    }
+
+    &--lunch{
+
+    }
+
+}
