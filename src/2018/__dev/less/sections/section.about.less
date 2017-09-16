@@ -1,0 +1,40 @@
+.about{
+    position: relative;
+    @media(max-width:@screen-ms-max){
+        margin-top:-200px;
+        padding:50px 0;
+    }
+    @media(min-width:@screen-sm){
+        padding:100px 0;
+        margin-top:-400px;
+    }
+
+    z-index: 1;
+
+    h1{
+        img{
+            width: 250px;
+        }
+        span{
+            display: none;
+        }
+    }
+    h4{
+        margin: 0 0 40px 0;
+    }
+
+    &-info{
+        height: 200px;
+        text-align: center;
+        &-icon{
+            max-width: 90px;
+        }
+
+        &-text{
+            display: block;
+            font-size: 14px;
+            margin-top:15px;
+            font-weight: 700;
+        }
+    }
+}

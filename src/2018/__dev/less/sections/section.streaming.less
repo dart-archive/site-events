@@ -1,0 +1,33 @@
+.streaming{
+    position: relative;
+    @media(max-width:@screen-ms-max){
+        padding:200px 0;
+    }
+    @media(min-width:@screen-sm){
+        padding:200px 0;
+    }
+
+    background-image:url('../images/dartconf-streaming.jpg');
+    background-size: cover;
+
+    text-align: center;
+
+    &:before,&:after{
+        content: '';
+        height: 200px;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        user-select:none;
+
+    }
+    &:before{
+        background: linear-gradient(to top, @color-darkblue-alpha 0%, @color-darkblue 100%);
+        top: 0;
+
+    }
+    &:after{
+        background: linear-gradient(to bottom, @color-darkblue-alpha 0%, @color-darkblue 100%);
+        bottom: 0;
+    }
+}

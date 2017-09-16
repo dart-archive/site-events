@@ -1,0 +1,39 @@
+.intro{
+    background-image: url('../images/dartconfhero.jpg');
+    background-size: cover;
+    background-position: top center;
+    min-height: 95vh;
+    @media(min-width:@screen-sm){
+        min-height: 120vh;
+    }
+    position: relative;
+
+    &-dartconf{
+        @media(max-width:@screen-sm-max){
+            top: 40%;
+            transform:translate(-50%,-50%);
+        }
+        @media(min-width:@screen-md){
+            top: 50%;
+            transform:translate(-50%,-80%);
+        }
+        position: absolute;
+        left: 50%;
+        max-width: 80%;
+        z-index:2;
+    }
+
+
+    &:after{
+        left: 0;
+        content: '';
+        width: 100%;
+        position: absolute;
+        height: 100%;
+        background: rgb(114, 46, 40);
+        background: linear-gradient(to bottom, @color-darkblue-alpha 0%, @color-darkblue 70%);
+        bottom: 0;
+        user-select:none;
+        z-index:1;
+    }
+}

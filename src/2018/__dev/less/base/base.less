@@ -1,0 +1,71 @@
+/**
+ * Base
+ */
+
+// Box sizing
+* {
+    box-sizing: border-box;
+
+    &:before,
+    &:after {box-sizing: border-box;}
+}
+
+html{
+       overflow-x: hidden;
+
+}
+
+// Body
+body {
+    background-color: @site-background-color;
+    font-family: @base-font-family;
+    font-weight: @base-font-weight;
+    font-size: @base-font-size;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: @color-text;
+    line-height: 2;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    cursor: url('../images/dartconf-cursor.png'), none;
+}
+
+
+// Links
+a {
+    color: @color-link;
+    text-decoration: underline;
+    cursor: url('../images/dartconf-cursor-pointer.png'), none;
+    &:hover,
+    &:focus {color: darken(@color-link, 10%);cursor: url('../images/dartconf-cursor-pointer.png'), none;}
+}
+
+
+// Image handling
+figure {
+    margin: 0;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+        transition: opacity 0.2s;
+    }
+
+	&.contain-width img { width: auto; }
+}
+
+
+.animate{
+    opacity: 0;
+    transition:opacity 500ms @easeOutExpo;
+    &.onscreen{
+        opacity: 1;
+    }
+}

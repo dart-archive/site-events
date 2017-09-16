@@ -1,0 +1,157 @@
+/**
+ * Base: Buttons
+ */
+
+// Default button
+.button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    background-color: @color-primary;
+    white-space: nowrap;
+    user-select: none;
+    position: relative;
+    font-weight: 700;
+    font-family: @base-font-family;
+    transition: all 600ms ease;
+    @media(max-width:@screen-xs-max){
+        font-size: 11px;
+        line-height: 33px;
+        height: 35px;
+        padding:0px 20px;
+    }
+    @media(min-width:@screen-ms){
+        font-size: 13px;
+        line-height: 37px;
+        height: 40px;
+        padding: 0px 20px;
+    }
+    border: 1px solid transparent;
+    text-decoration: none;
+    border-radius: 100px;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    &:hover,
+    &:focus {
+        color: @color-white;
+        text-decoration: none;
+        outline: none;
+    }
+
+    &[disabled],
+    [disabled] & { cursor: not-allowed; }
+
+    // Ghost button
+    &--ghost {
+        color: @color-text;
+        border: solid 1px @color-primary;
+        background-color: transparent;
+
+        &:hover,
+        &:focus {
+            color: @color-white;
+            background-color: @color-primary;
+        }
+    }
+
+
+    &--blue{
+        border-color:@color-highlight-blue;
+        box-shadow: inset 0 0 10px 5px @color-blue-light,
+                    0 0 18px  6px @color-highlight-blue;
+        background: linear-gradient(90deg, @color-blue-light 10%,@color-blue-lightest 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-blue-light', endColorstr='@color-blue-lightest',GradientType=1 );
+        background-size:100% 60px;
+        background-position: center center;
+        color:@color-darkblue;
+
+        &:hover{
+            color:@color-darkblue;
+            background: linear-gradient(90deg, @color-blue-light 10%,@color-blue-lightest 100%);
+            box-shadow: inset 0 0 10px 5px @color-blue-light,
+                        0 0 30px 15px @color-highlight-blue;
+            background-size:300% 100px;
+            background-position: center right;
+        }
+        &-ghost{
+            box-shadow: inset 0 0 0px 0px @color-blue-light,
+                        0 0 18px 6px @color-highlight-blue;
+            &:before{
+                width: ~"calc(100% - 4px)";
+                background: @color-darkblue;
+                @media(max-width:@screen-xs-max){
+                    height: 29px;
+                    line-height: 30px;
+                }
+                height: 34px;
+                line-height: 33px;
+                position: absolute;
+                left: 2px;
+                top: 2px;
+                border-radius: 100px;
+                content: attr(data-text);
+                color:white;
+                box-shadow: inset 0 0 10px 5px @color-highlight-blue;
+                text-shadow:0 0 10px @color-highlight-blue;
+            }
+            &:hover{
+                box-shadow: inset 0 0 0px 0px @color-blue-light,
+                            0 0 30px 15px @color-highlight-blue;
+            }
+        }
+    }
+
+
+
+    &--pink{
+        border-color: @color-pink;
+        box-shadow: inset 0 0 10px 5px @color-highlight-pink,
+                    0 0 18px 6px @color-highlight-pink;
+        background: linear-gradient(90deg, @color-pink 10%,@color-pink-light 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-pink', endColorstr='@color-pink-light',GradientType=1 );
+        background-size:100% 60px;
+        background-position: center center;
+        color:white;
+
+        &:hover{
+            color:@color-darkblue;
+            box-shadow: inset 0 0 10px 5px @color-highlight-pink,
+                        0 0 20px 10px @color-highlight-pink;
+            background: linear-gradient(90deg, @color-pink 10%,@color-pink-light 100%);
+            color:white;
+            background-size:300% 100px;
+            background-position: center right;
+        }
+        &-ghost{
+            box-shadow: inset 0 0 0px 0px @color-highlight-pink,
+                    0 0 18px 6px @color-highlight-pink;
+            &:before{
+                width: ~"calc(100% - 4px)";
+                background: @color-darkblue;
+                @media(max-width:@screen-xs-max){
+                    height: 29px;
+                    line-height: 30px;
+                }
+                height: 34px;
+                line-height: 33px;
+                position: absolute;
+                left: 2px;
+                top: 2px;
+                border-radius: 100px;
+                content: attr(data-text);
+                color:white;
+                box-shadow: inset 0 0 10px 5px @color-highlight-pink;
+                text-shadow:0 0 10px @color-highlight-pink;
+            }
+            &:hover{
+                box-shadow: inset 0 0 0px 0px @color-pink,
+                            0 0 20px 10px @color-highlight-pink;
+            }
+        }
+    }
+
+}

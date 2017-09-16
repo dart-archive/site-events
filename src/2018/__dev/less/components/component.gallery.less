@@ -1,0 +1,33 @@
+.gallery{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 800px;
+    width: 99%;
+    margin: -0.5%;
+
+    &__image{
+        width: 33%;
+        margin:.5%;
+        background-size:cover;
+        &.dh100{
+            padding-bottom:67.6%;
+        }
+        &.dh50{
+            padding-bottom:33.3%;
+        }
+        &.dh33{
+            padding-bottom:21.85%;
+        }
+        transition: .8s opacity;
+    }
+
+    &:hover{
+        figure {
+            opacity: 0.3;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
