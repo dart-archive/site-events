@@ -1,0 +1,116 @@
+.site-foot{
+    position: relative;
+    padding:100px 0;
+    font-size: 12px;
+
+    text-align: center;
+
+    .col{
+        padding-bottom: 50px;
+    }
+
+    &__palmes{
+        width: 200px;
+        height: auto;
+    }
+    &__logo{
+        display: block;
+        width: 200px;
+        height: auto;
+        margin: 30px auto;
+    }
+
+    a{
+        color:@color-blue-light;
+        transition:all 200ms ease;
+        &:hover{
+            text-shadow: 0 0 10px white, 0 0 40px @color-highlight-blue;
+            color:white;
+        }
+    }
+
+    &__date{
+        .make-xs--column(12);
+        .make-sm--column(12);
+        .make-md--column(2);
+        .make-lg--column(2);
+    }
+
+    &__address{
+        .make-xs--column(12);
+        .make-sm--column(12);
+        .make-md--column(5);
+        .make-lg--column(5);
+    }
+
+    &__contact{
+        .make-xs--column(12);
+        .make-sm--column(12);
+        .make-md--column(5);
+        .make-lg--column(5);
+        @media(max-width:@screen-sm-max){
+            padding-left:60px;
+            padding-top:30px;
+        }
+        @media(min-width:@screen-md){
+            text-align: right;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            li{
+                display: block;
+                @media(min-width:@screen-md){
+                    display: inline-block;
+                }
+                margin-right: 35px;
+            }
+            a{
+                display: block;
+                @media(min-width:@screen-md){
+                    display: inline-block;
+                }
+                position: relative;
+                &:before{
+                    content:'';
+                    display: block;
+                    width: 20px;
+                    height: 20px;
+                    background-size: 16px;
+                    background-repeat: no-repeat;
+                    position: absolute;
+
+                    @media(max-width:@screen-ms-max){
+                        margin-left:-22px;
+                        margin-top:6px;
+                    }
+                    @media(min-width:@screen-sm){
+                        left:-22px;
+                        top:6px;
+                    }
+
+                }
+            }
+        }
+
+        &-email{
+            &:before{
+                background-image:url('../images/dartconf-icon-email.svg');
+            }
+        }
+
+        &-youtube{
+            &:before{
+                background-image:url('../images/dartconf-icon-youtube.svg');
+            }
+        }
+
+        &-twitter{
+            &:before{
+                background-image:url('../images/dartconf-icon-twitter.svg');
+            }
+        }
+
+    }
+}
