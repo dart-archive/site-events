@@ -6,6 +6,7 @@ install:
   - npm install -g firebase-tools
   - npm install -g bower
   - npm install -g gulp-cli
+  - npm install -g superstatic
   - pub global activate linkcheck
 
 before_script:

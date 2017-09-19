@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-firebase --token "${FIREBASE_TOKEN}" serve --port 4321 & fb_pid=$!
+superstatic --port 4321 & serve_pid=$!
 sleep 10
 linkcheck :4321 --no-nice
 exitcode=$?
-kill $fb_pid
+kill $serve_pid
 exit $exitcode
