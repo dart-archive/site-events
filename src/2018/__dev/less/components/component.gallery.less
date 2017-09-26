@@ -7,17 +7,92 @@
     margin: -0.5%;
 
     &__image{
-        width: 33%;
         margin:.5%;
         background-size:cover;
-        &.dh100{
-            padding-bottom:67.6%;
+
+        @media(max-width:342px) {
+            width: 100%;
+            &.dh100{
+                padding-bottom:67.6%;
+            }
+            &.dh50{
+                padding-bottom:33.3%;
+            }
+            &.dh33{
+                padding-bottom:21.85%;
+            }
         }
-        &.dh50{
-            padding-bottom:33.3%;
+        @media(min-width:343px) and (max-width:455px) {
+            width: 50%;
+            &.dh100{
+                padding-bottom:121.6%;
+            }
+            &.dh50{
+                padding-bottom:73.3%;
+            }
+            &.dh33{
+                padding-bottom:39.85%;
+            }
         }
-        &.dh33{
-            padding-bottom:21.85%;
+        @media(min-width:456px) and (max-width:480px) {
+            width: 50%;
+            &.dh100{
+                padding-bottom:80.6%;
+            }
+            &.dh50{
+                padding-bottom:73.3%;
+            }
+            &.dh33{
+                padding-bottom:39.85%;
+            }
+        }
+        @media(min-width:481px) and (max-width:599px) {
+            width: 50%;
+            &.dh100{
+                padding-bottom:75%;
+            }
+            &.dh50{
+                padding-bottom:33.3%;
+            }
+            &.dh33{
+                padding-bottom:47.6%;
+            }
+        }
+        @media(min-width:600px) and (max-width:602px) {
+            width: 50%;
+            &.dh100{
+                padding-bottom:75%;
+            }
+            &.dh50{
+                padding-bottom:33.3%;
+            }
+            &.dh33{
+                padding-bottom:47.4%;
+            }
+        }
+        @media(min-width:602px) and (max-width:991px) {
+            width: 50%;
+            &.dh100{
+                padding-bottom:75%;
+            }
+            &.dh50{
+                padding-bottom:33.3%;
+            }
+            &.dh33{
+                padding-bottom:24.2%;
+            }
+        }
+        @media(min-width:@screen-md){
+            width: 33%;
+            &.dh100{
+                padding-bottom:67.6%;
+            }
+            &.dh50{
+                padding-bottom:33.3%;
+            }
+            &.dh33{
+                padding-bottom:21.85%;
+            }
         }
         transition: .8s opacity;
     }

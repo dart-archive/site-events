@@ -28,7 +28,7 @@ body {
     overflow-x: hidden;
     position: relative;
     width: 100%;
-    cursor: url('../images/dartconf-cursor.png'), none;
+    // cursor: url('../images/dartconf-cursor.png'), none;
 }
 
 
@@ -36,9 +36,12 @@ body {
 a {
     color: @color-link;
     text-decoration: underline;
-    cursor: url('../images/dartconf-cursor-pointer.png'), none;
+    // cursor: url('../images/dartconf-cursor-pointer.png'), none;
     &:hover,
-    &:focus {color: darken(@color-link, 10%);cursor: url('../images/dartconf-cursor-pointer.png'), none;}
+    &:focus {
+        color: darken(@color-link, 10%);
+        // cursor: url('../images/dartconf-cursor-pointer.png'), none;
+    }
 }
 
 
