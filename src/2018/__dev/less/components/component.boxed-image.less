@@ -1,0 +1,42 @@
+.boxed-image{
+    position: relative;
+
+    &.pc60{
+        width: 60%;
+        &.right{
+            margin-left: 40%;
+        }
+        &.left{
+            margin-right: 40%;
+        }
+    }
+    &.pc80{
+        width: 80%;
+        &.right{
+            margin-left: 20%;
+        }
+        &.left{
+            margin-right: 20%;
+            @media(max-width:@screen-xs-max){
+                margin-left: 10%;
+            }
+        }
+    }
+
+    margin: 50px 0;
+
+    img{
+        position: relative;
+        width: 100%;
+    }
+    &:after{
+        content: '';
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        border:2px solid @color-pink-text;
+        z-index:-1;
+    }
+}
