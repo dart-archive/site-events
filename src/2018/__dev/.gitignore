@@ -1,0 +1,10 @@
+node_modules/
+dist/
+vendor/
+
+*.log
+.vscode/
+web.config
+
+npm-debug.log.*
+*.orig

@@ -2,19 +2,29 @@ DDS_2016_SOURCES := $(wildcard src/2016/src/**)
 DDS_2016_DIST := $(wildcard src/2016/dist/**)
 DDS_2016_FINAL := $(wildcard publish/2016/summit/**)
 
-.SECONDARY: .summit2016.dist.intermediate .summit2016.intermediate
+DARTCONF_2018_SOURCES := $(wildcard src/2018/__dev/**)
+DARTCONF_2018_DIST := $(wildcard src/2018/dist/**)
+DARTCONF_2018_FINAL := $(wildcard publish/2018/dartconf/**)
 
-build: .summit2016.intermediate publish/404.html
+.SECONDARY: .summit2016.dist.intermediate .summit2016.intermediate \
+	.dartconf2018.intermediate
+
+build: .summit2016.intermediate .dartconf2018.intermediate publish/404.html
 	@echo "=== Site built ==="
 
-deploy: .summit2016.intermediate publish/404.html
+deploy: .summit2016.intermediate .dartconf2018.intermediate publish/404.html
 	firebase deploy
 
-serve: .summit2016.intermediate publish/404.html
+serve: .summit2016.intermediate .dartconf2018.intermediate publish/404.html
 	firebase serve
 
 publish/404.html: publish
 	cp src/404.html publish
+
+.dartconf2018.intermediate: $(DARTCONF_2018_DIST)
+	mkdir -p publish/2018/dartconf/
+	cp -r src/2018/dist/* publish/2018/dartconf/
+	touch .dartconf2018.intermediate
 
 .summit2016.intermediate: .summit2016.dist.intermediate
 	mkdir -p publish/2016/summit/

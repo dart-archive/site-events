@@ -1,0 +1,87 @@
+.speakers{
+    position: relative;
+    @media(max-width:@screen-ms-max){
+        padding:50px 0;
+    }
+    @media(min-width:@screen-sm){
+        padding:100px 0;
+    }
+
+
+
+    // Snazzies
+    &:before{
+        content: '';
+        background-image: url('../images/dartconf-bg-shape.svg');
+        @media(max-width:@screen-ms-max){
+            width: 500px;
+            height: 500px;
+        }
+        @media(min-width:@screen-sm){
+            width: 1100px;
+            height: 1100px;
+        }
+        top: -200px;
+        left:-40px;
+        position: absolute;
+        background-size: 99%;
+        background-repeat: no-repeat;
+        user-select: none;
+        z-index:-1;
+    }
+    .container{
+        position: relative;
+
+        &:before{
+            content: '';
+            @media(max-width:@screen-ms-max){
+                width: 70px;
+                height: 70px;
+                top: -50px;
+                left:20px;
+            }
+            @media(min-width:@screen-sm){
+                width: 100px;
+                height: 100px;
+                top: -50px;
+                left:-50px;
+            }
+            background-image: url('../images/dartconf-la-stamp.svg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            position: absolute;
+            z-index: 100;
+            user-select: none;
+        }
+        &:after{
+            // content: 'SPEAKERS';
+            // writing-mode: vertical-rl;
+            // text-orientation: upright;
+            // transform: rotate(0deg);
+            // font-weight: 100;
+            // color:@color-pink-text;
+            // white-space: nowrap;
+            // font-size: 45px;
+
+            z-index: 100;
+            user-select: none;
+            position: absolute;
+            top: -60px;
+            @media(max-width:@screen-ms-max){
+                right: 10px;
+                width: 20px;
+            }
+            @media(min-width:@screen-sm){
+                right: -30px;
+                width: 30px;
+            }
+
+            background: url('../images/side-speakers.svg');
+            background-size: 100%;
+            width: 30px;
+            height: 500px;
+            background-repeat: no-repeat;
+
+        }
+    }
+}

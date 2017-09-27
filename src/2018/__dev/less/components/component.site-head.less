@@ -1,0 +1,26 @@
+.site-head{
+    height: 90px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 150;
+
+
+    &:before{
+        content: '';
+        width: 100%;
+        height: 90px;
+        top: -90px;
+        background: linear-gradient(to top, @color-darkblue-alpha 0%, @color-darkblue 100%);
+        position: fixed;
+        z-index:-1;
+        transition:all 700ms ease;
+    }
+
+    &.scrolled{
+        &:before{
+            top: 0;
+        }
+    }
+}
