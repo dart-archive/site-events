@@ -1,7 +1,8 @@
 .intro{
-    background-image: url('../images/dartconfhero.jpg');
-    background-size: cover;
-    background-position: top center;
+    // background-image: url('../images/dartconfhero.jpg');
+    // background-size: cover;
+    // background-position: top center;
+    background-color: @color-greyblue;
     min-height: 95vh;
     @media(min-width:@screen-sm){
         min-height: 120vh;
@@ -14,11 +15,12 @@
             transform:translate(-50%,-50%);
         }
         @media(min-width:@screen-md){
-            top: 50%;
+            top: 45%;
             transform:translate(-50%,-80%);
         }
         position: absolute;
         left: 50%;
+        width: 400px;
         max-width: 80%;
         z-index:2;
     }
