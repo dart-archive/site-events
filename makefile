@@ -16,7 +16,7 @@ deploy: .summit2016.intermediate .dartconf2018.intermediate publish/404.html
 	firebase deploy
 
 serve: .summit2016.intermediate .dartconf2018.intermediate publish/404.html
-	firebase serve
+	superstatic
 
 publish/404.html: publish
 	cp src/404.html publish
