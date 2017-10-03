@@ -28,7 +28,7 @@ publish/404.html: publish
 	cp -r src/2018/dist/* publish/2018/dartconf/
 	touch .dartconf2018.intermediate
 
-.dartconf2018.dist.intermediate: $(DARTCONF_2018_SOURCES) $(DARTCONF_2018_SOURCES_SUBDIR)
+.dartconf2018.dist.intermediate: $(DARTCONF_2018_SOURCES) $(DARTCONF_2018_SOURCES_SUBDIR) src/2018/__dev/node_modules
 	cd src/2018/__dev && gulp
 	touch .dartconf2018.dist.intermediate
 
@@ -56,3 +56,5 @@ clean:
 	rm -fr publish/
 	rm -fr src/2016/dist/
 	rm -fr src/2016/node_modules/
+	rm -fr src/2018/__dev/node_modules/
+	rm .*.intermediate
