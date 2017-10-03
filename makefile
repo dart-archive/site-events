@@ -14,6 +14,11 @@ DARTCONF_2018_FINAL := $(wildcard publish/2018/dartconf/**)
 build: .summit2016.intermediate .dartconf2018.intermediate publish/404.html
 	@echo "=== Site built ==="
 
+build_travis: .summit2016.intermediate publish/404.html
+	mkdir -p publish/2018/dartconf/
+	cp -r src/2018/dist/* publish/2018/dartconf/
+	@echo "=== Site built for Travis (no rebuilding of 2018 via gulp) ==="
+
 deploy: .summit2016.intermediate .dartconf2018.intermediate publish/404.html
 	firebase deploy
 
