@@ -33,8 +33,8 @@ publish/404.html: publish
 	touch .dartconf2018.dist.intermediate
 
 src/2018/__dev/node_modules:
-	cd src/2018/__dev && npm install
 	cd src/2018/__dev && npm install gulp
+	cd src/2018/__dev && npm install
 
 .summit2016.intermediate: .summit2016.dist.intermediate
 	mkdir -p publish/2016/summit/
