@@ -3,9 +3,9 @@
     // background-size: cover;
     // background-position: top center;
     background-color: @color-greyblue;
-    min-height: 95vh;
-    @media(min-width:@screen-sm){
-        min-height: 100vh;
+    min-height: 90vh;
+    @media(min-height: 800px) {
+        min-height: 70vh;
     }
     position: relative;
 
@@ -15,7 +15,7 @@
             transform:translate(-50%,-50%);
         }
         @media(min-width:@screen-md){
-            top: 45%;
+            top: 55%;
             transform:translate(-50%,-80%);
         }
         position: absolute;
