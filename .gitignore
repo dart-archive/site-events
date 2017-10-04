@@ -1,6 +1,9 @@
 
 # Node modules installed by bower
 node_modules
+package-lock.json
+
+# The output directory
 publish
 
 
