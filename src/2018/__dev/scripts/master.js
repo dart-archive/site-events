@@ -13,6 +13,8 @@ var dartconf = dartconf || {};
     dartconf.speakers.init();
     dartconf.siteHead.init();
     dartconf.animations.init();
+    dartconf.speakersAdditional.init();
+    dartconf.schedule.init();
 
 
 })(jQuery); // Document ready end

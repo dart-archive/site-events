@@ -36,6 +36,8 @@ module.exports = (function () {
                     projectPath + "scripts/components/novicell.overlay.js",
                     projectPath + "scripts/components/component.speakers.js",
                     projectPath + "scripts/components/component.site-head.js",
+                    projectPath + "scripts/components/component.show-additional-speakers.js",
+                    projectPath + "scripts/components/component.schedule.js",
                     projectPath + "scripts/components/dartconf.animations.js",
                     projectPath + "scripts/master.js"
                 ],
