@@ -65,53 +65,58 @@
             position:relative;
             z-index:3;
             margin-top:-25px;
+        }
 
-            &--subject {
-                height:60px;
-                margin:0 0 10px 0;
+        &__details-subject {
+            height:60px;
+            margin:0 0 10px 0;
+            font-size:15px;
+            font-weight:700;
+            line-height:20px;
+            text-align:center;
+            text-shadow:10px 15px 10px rgba(35,31,32,1);
+
+            @media(min-width:@screen-sm) {
+                height:75px;
+                font-size:18px;
+            }
+
+            @media(min-width:@screen-md) {
+                height:80px;
+                padding:0 10px;
+                font-size:20px;
+                line-height:24px;
+            }
+
+            @media(min-width:@screen-lg) {
+              height:60px;
+            }
+        }
+
+        &__details-name {
+            margin:0 0 0 0;
+            line-height: 14px;
+            font-size:12px;
+            text-align:center;
+
+            @media(min-width:@screen-sm) {
                 font-size:15px;
-                font-weight:700;
-                line-height:20px;
-                text-align:center;
-                text-shadow:10px 15px 10px rgba(35,31,32,1);
-
-                @media(min-width:@screen-sm) {
-                    height:75px;
-                    font-size:18px;
-                }
-
-                @media(min-width:@screen-md) {
-                    height:80px;
-                    padding:0 10px;
-                    font-size:20px;
-                    line-height:24px;
-                }
-
-                @media(min-width:@screen-lg) {
-                  height:60px;
-                }
             }
 
-            &--name {
-                margin:0 0 0 0;
-                line-height: 14px;
-                font-size:12px;
-                text-align:center;
+            span {
+                display:block;
+                font-size:9px;
 
                 @media(min-width:@screen-sm) {
-                    font-size:15px;
-                }
-
-                span {
-                    display:block;
-                    font-size:9px;
-
-                    @media(min-width:@screen-sm) {
-                        padding-top:5px;
-                        font-size:11px;
-                    }
+                    padding-top:5px;
+                    font-size:11px;
                 }
             }
+        }
+
+        // Overlay description
+        &__details-description {
+            display:none;
         }
     }
 

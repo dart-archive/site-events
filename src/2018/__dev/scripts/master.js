@@ -15,8 +15,7 @@ var dartconf = dartconf || {};
     dartconf.animations.init();
     dartconf.speakersAdditional.init();
     dartconf.schedule.init();
+    dartconf.speakerDetails.init();
 
 
 })(jQuery); // Document ready end
-
-
