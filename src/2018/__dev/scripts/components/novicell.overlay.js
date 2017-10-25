@@ -203,7 +203,7 @@ novicell.overlay = novicell.overlay || new function () {
         });
 
         // Add close button to overlay element
-        overlayContent.appendChild(btnClose);
+        backdrop.appendChild(btnClose);
     };
 
     /*

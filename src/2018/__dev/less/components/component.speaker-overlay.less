@@ -2,6 +2,8 @@
     background-color:rgba(48,51,77,.55);
 
     .novi-overlay__content {
+        position:relative;
+        margin-top:70px;
         background:@color-darkblue;
         background-image:url('../images/dartconf-bg-shape.svg');
         background-size: 99%;
@@ -17,6 +19,26 @@
         .details-description {
             &__image {
                 text-align:center;
+
+                &:before {
+                    content:'';
+                    position:absolute;
+                    top:15px;
+                    left:15px;
+                    z-index:20;
+                    display:block;
+                    width:70px;
+                    height:67px;
+                    background-image:url('../images/dartconf-la-stamp.svg');
+                    background-repat:none;
+                    background-size:100%;
+
+                    @media(min-width:@screen-sm) {
+                        right:20px;
+                        top:20px;
+                        left:auto;
+                    }
+                }
 
                 @media(min-width:@screen-sm) {
                     display:inline-block;
@@ -68,7 +90,7 @@
                         font-size:28px;
 
                         @media(min-width:@screen-sm) {
-
+                            width:80%;
                         }
                     }
                 }
@@ -76,17 +98,34 @@
                     font-weight:bold;
                     font-size:18px;
                 }
+                p {
+                    margin-bottom:50px;
+                    line-height:30px;
+
+                    @media(min-width:@screen-sm) {
+                        line-height:38px;
+                    }
+                }
                 @media(min-width:@screen-sm) {
                     display:inline-block;
                     vertical-align:top;
                     width:420px;
+                    margin-top:-24px;
                     padding-left:40px;
+                }
+
+                @media(min-width:@screen-md) {
+                    width:630px;
                 }
             }
         }
     }
+}
 
-    .novi-overlay-close {
-        fill:@color-white;
-    }
+.novi-overlay-close {
+    fill:@color-white;
+    top:15px;
+    right:15px;
+    width:30px;
+    height:30px;
 }
