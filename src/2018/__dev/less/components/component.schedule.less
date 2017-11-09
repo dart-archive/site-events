@@ -53,8 +53,31 @@
         padding-left:0;
     }
 
-    table {
+    .schedule-table {
         width:100%;
+
+        &--phase-three {
+
+            tbody {
+                tr {
+                    display:block;
+                    position:relative;
+
+                    td {
+                        &:nth-child(2) {
+                            padding-right:30px;
+                        }
+
+                        .watch-talk-icon {
+                            position:absolute;
+                            top:50%;
+                            right:0;
+                            margin-top:-7px;
+                        }
+                    }
+                }
+            }
+        }
 
         tbody {
             tr {

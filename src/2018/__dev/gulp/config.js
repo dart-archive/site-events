@@ -38,7 +38,10 @@ module.exports = (function () {
                     projectPath + "scripts/components/component.site-head.js",
                     projectPath + "scripts/components/component.show-additional-speakers.js",
                     projectPath + "scripts/components/component.speaker-details.js",
+                    projectPath + "scripts/components/component.live-stream.js",
+                    projectPath + "scripts/components/component.show-gallery.js",
                     projectPath + "scripts/components/component.schedule.js",
+                    projectPath + "scripts/components/component.show-gallery.js",
                     projectPath + "scripts/components/dartconf.animations.js",
                     projectPath + "scripts/master.js"
                 ],

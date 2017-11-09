@@ -64,7 +64,7 @@
         <header class="site-head" id="site-head-js">
             <nav class="navigation-main">
                 <a href="/" class="site-logo"><img src="images/dartconf-logo-white.svg" alt="" class="site-logo__image"></a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLScJjXqEuhB9_OoBNXM6LJIzWuPGy6xOgKBfh27samkFaEeE7Q/viewform" class="navigation-main__register button button--blue"><span class="navigation-main__register-text">Register</span></a>
+                <a href="#" class="navigation-main__register button button--blue watchLiveTalks" data-video-id="IMNUiC2O9M8" data-type="youtube"><span class="navigation-main__register-text">Watch talks</span></a>
                 <button type="button" class="navigation-main__trigger" id="navigation-main__trigger-js">Conference</button>
                 <ul class="navigation-main__list " id="navigation-main-js">
                     <li class="navigation-main__item"><a href="#about" class="navigation-main__link active">Conference</a></li>
@@ -77,49 +77,32 @@
 
         <main class="site-main">
             <section class="intro" id="intro" name="Intro">
-                <img src="images/dartconf-logo-neon.png" alt="Dart Conference 2018" class="intro-dartconf">
+                <img src="images/dartconf-logo-thanks.png" alt="Dart Conference 2018 - See you next year" class="intro-dartconf intro-dartconf--phase-four">
             </section>
-            <section class="about" id="about" name="Conference">
+            <section class="about about--phase-three" id="about" name="Conference">
                 <div class="container">
                     <div class="row">
                         <div class="col col--md-6">
                             <h1>Dart Conference</h1>
-                            <h3>Including Flutter and AngularDart</h3>
                             <h4>January 23-24, 2018</h4>
-                            <p>Dart's mission is to make it possible to build next-generation user experiences — on the web, on iOS, on Android, everywhere. DartConf is the premier event that connects Flutter and AngularDart developers together, and to the Google engineers who work on these projects.</p>
+                            <p>This years <strong>DartConf</strong> is over. Thanks to participants, speakers and volunteers to gather around Dart in Los Angeles. We are looking forward to next year. All the speaks and merchandice are now available online.</p>
+
+                            <button class="button button--pink button--pink-ghost watchLiveTalks" data-text="Watch talks" data-video-id="IMNUiC2O9M8" data-type="youtube">Watch talks</button>
+                            <button class="button button--blue button--blue-ghost" data-text="Grab your merch">Grab your merch</button>
                             <figure class="boxed-image left pc80">
-                                <img src="images/dartconf-image-02.jpg">
+                                <img src="images/dartconf-image-04.jpg">
                             </figure>
+                            <p>Enjoy all the photos taken during the event.<br>You might find yourself there :)</p>
+                            <button class="button button--blue button--blue-ghost showDartConfGallery" data-text="Show gallery" data-element="#gallery-content">Show gallery</button>
                         </div>
                         <div class="col col--md-6">
                             <figure class="boxed-image right pc60">
-                                <img src="images/dartconf-image-01.jpg">
+                                <img src="images/image-dartconf-03.jpg">
                             </figure>
                             <div class="row">
-                                <div class="col col--xs-6 col--sm-4 about-info">
-                                    <img src="images/dartconf_icon_location.png" class="about-info-icon" alt="Venice Beach, LA">
-                                    <span class="about-info-text">Venice Beach, LA</span>
-                                </div>
-                                <div class="col col--xs-6 col--sm-4 about-info">
-                                    <img src="images/dartconf_icon_track.png" class="about-info-icon" alt="1 Track">
-                                    <span class="about-info-text">1 Track</span>
-                                </div>
-                                <div class="col col--xs-6 col--sm-4 about-info">
-                                    <img src="images/dartconf_icon_days.png" class="about-info-icon" alt="2 Days">
-                                    <span class="about-info-text">2 Days</span>
-                                </div>
-                                <div class="col col--xs-6 col--sm-4 about-info">
-                                    <img src="images/dartconf_icon_party.png" class="about-info-icon" alt="1 Party">
-                                    <span class="about-info-text">1 Party</span>
-                                </div>
-                                <div class="col col--xs-6 col--sm-4 about-info">
-                                    <img src="images/dartconf_icon_talks.png" class="about-info-icon" alt="+16 Talks">
-                                    <span class="about-info-text">+16 Talks</span>
-                                </div>
-                                <div class="col col--xs-6 col--sm-4 about-info">
-                                    <img src="images/dartconf_icon_attendees.png" class="about-info-icon" alt="350 Attendees">
-                                    <span class="about-info-text">350 Attendees</span>
-                                </div>
+                                <figure class="boxed-image right pc80 boxed-image--phase-four">
+                                    <img src="images/dartconf-image-05.jpg">
+                                </figure>
                             </div>
                         </div>
                     </div>
@@ -402,17 +385,29 @@
 
                             <div id="schedule-tab-1" class="schedule-tabs-content schedule-tabs-content--current">
 
-                                <table class="schedule-table">
+                                <table class="schedule-table schedule-table--phase-three">
                                     <tbody>
                                         <tr>
-                                            <td><span>10:00</span></td>
+                                            <td>
+                                                <span>10:00</span>
+                                                <!-- Video link when ready -->
+                                                <a href="https://www.youtube.com/watch?v=JXcNqXbCa0E" title="">
+                                                    <img src="images/video-player-icon.svg" class="watch-talk-icon" alt="Watch this talk">
+                                                </a>
+                                            </td>
                                             <td><span>KEYNOTE</span> Dart in 2017 and beyond</td>
                                             <td>Kasper Lund <span>Company name</span></td>
                                             <td>Dan Groove <span>Company name</span></td>
                                             <td>Anders Sandhold <span>Company name</span></td>
                                         </tr>
                                         <tr>
-                                            <td>10:30</td>
+                                            <td>
+                                                10:30
+                                                <!-- Video link when ready -->
+                                                <a href="https://www.youtube.com/watch?v=8ixOkJOXdMo" title="">
+                                                    <img src="images/video-player-icon.svg" class="watch-talk-icon" alt="Watch this talk">
+                                                </a>
+                                            </td>
                                             <td>Webdevelopment using AngularDart 2.0</td>
                                             <td>Ferhat Buyukkokten <span>Company name</span></td>
                                             <td colspan="2">Matan Lurey <span>Company name</span></td>
@@ -428,7 +423,13 @@
                                             <td colspan="3">&nbsp;</td>
                                         </tr>
                                         <tr>
-                                            <td>12:00</td>
+                                            <td>
+                                                12:00
+                                                <!-- Video link when ready -->
+                                                <a href="https://www.youtube.com/watch?v=IMNUiC2O9M8" title="">
+                                                    <img src="images/video-player-icon.svg" class="watch-talk-icon" alt="Watch this talk">
+                                                </a>
+                                            </td>
                                             <td>Fast web development width DDC</td>
                                             <td colspan="3">Vijay Menon <span>Company name</span></td>
                                         </tr>
@@ -551,8 +552,8 @@
                         </div>
                         <div class="col col--xs-12 col--md-6 col--md-offset-3">
                             <h2>Attend Dart Conference</h2>
-                            <p>Registration for DartConf is now open</p>
-                            <p><a href="https://docs.google.com/forms/d/e/1FAIpQLScJjXqEuhB9_OoBNXM6LJIzWuPGy6xOgKBfh27samkFaEeE7Q/viewform" data-text="Register now" class="button button--blue">Register now</a></p>
+                            <p><strong>Registration for DartConf’18 is closed</strong> <br>All seats are taken</p>
+                            <button class="button button--disabled">Sold out</button>
                         </div>
                     </div>
                 </div>
@@ -564,7 +565,7 @@
 
                             <h2>Can’t join in person?</h2>
                             <p>Don’t worry! Like last year's <a href="/2016/summit/">Dart Summit 2016</a> sessions, DartConf talks will be live streamed, recorded, and uploaded to the Google Developer channel on&nbsp;YouTube.</p>
-                            <p><a href="https://www.youtube.com/playlist?list=PLOU2XLYxmsILKY-A1kq4eHMcku3GMAyp2" data-text="Videos from Dart Summit 2016" class="button button--pink button--pink-ghost">Videos from Dart Summit 2016</a></p>
+                            <p><a href="#" data-text="Watch talks" class="button button--pink button--pink-ghost watchLiveTalks" data-video-id="IMNUiC2O9M8" data-type="youtube">Watch talks</a></p>
 
                         </div>
                     </div>

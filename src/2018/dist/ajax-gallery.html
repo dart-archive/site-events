@@ -1,0 +1,66 @@
+<div class="gallery-overlay__container">
+    <div class="gallery-overlay__content" id="gallery-content-1">
+        <div class="gallery-content-inner">
+            <img src="images/dartconf-la-stamp.svg" class="gallery-dartconf-logo" alt="Dart conf watermark">
+
+            <div class="owl-carousel gallery-content-slider">
+                <div class="item gallery-slide-item" data-caption="Mark T. Thompson speaking about his Reactive Framework">
+                    <div class="gallery-slide-item__img">
+                        <img src="images/gallery/gallery-image-1.jpg" alt="Slide 1">
+                    </div>
+                </div>
+                <div class="item gallery-slide-item" data-caption="Mark T. Thompson also speaking about something">
+                    <div class="gallery-slide-item__img">
+                        <img src="images/gallery/gallery-image-2.jpg" alt="Slide 2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gallery-counter" id="gallery-counter"></div>
+    </div>
+</div>
+
+
+<script>
+    // Gallery phase four
+    $(function(){
+        var owl = $('.gallery-content-slider');
+
+        owl.owlCarousel({
+          items:1,
+          nav:true,
+          navText: ["<img src='images/prev.svg'>","<img src='images/next.svg'>"],
+          navClass: ['owl-prev', 'owl-next'],
+          onInitialized  : counter, // When the plugin has initialized.
+          onTranslated : counter // When the translation of the stage has finished.
+        });
+
+        function counter(event) {
+            var element = event.target; // DOM element, in this example .owl-carousel
+            var items = event.item.count; // Number of items
+            var item = event.item.index + 1; // Position of the current item
+            var itemCaption = $('.item', '.owl-item.active').data('caption');
+
+            $('#gallery-counter').html("<span>"+item+" / "+items+"</span>"+"<p>"+itemCaption+"</p>");
+        }
+    });
+
+    closeGallery();
+
+    // Close function
+    function closeGallery() {
+        var elems = $('.gallery-overlay').add('.gallery-overlay__container');
+
+        elems.on('click', function(e) {
+            if(e.target !== e.currentTarget) return;
+
+            var overlay = $('.gallery-backdrop');
+
+            if (overlay.is(':visible')) {
+                overlay.remove();
+                $('html').removeClass('no-scroll');
+                $(document).unbind('mousemove');
+            }
+        });
+    }
+</script>
