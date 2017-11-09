@@ -63,3 +63,6 @@ clean:
 	rm -fr src/2016/node_modules/
 	rm -fr src/2018/__dev/node_modules/
 	rm .*.intermediate
+
+clean_2018:
+	rm .dartconf2018.dist.intermediate .dartconf2018.intermediate
