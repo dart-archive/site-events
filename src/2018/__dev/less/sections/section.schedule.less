@@ -1,0 +1,29 @@
+.schedule {
+    .container {
+        position: relative;
+
+        &:after{
+            z-index: 100;
+            user-select: none;
+            position: absolute;
+            top: 90px;
+            @media(max-width:@screen-ms-max){
+                left: 5px;
+                width: 20px;
+            }
+            @media(min-width:@screen-sm){
+                left: -25px;
+                width: 30px;
+            }
+            @media(min-width:@screen-md) {
+                top:20px;
+            }
+
+            background: url('../images/side-program.svg');
+            background-size: 100%;
+            width: 30px;
+            height: 500px;
+            background-repeat: no-repeat;
+        }
+    }
+}
