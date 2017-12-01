@@ -1,0 +1,621 @@
+<!doctype html>
+<!--[if lt IE 9]><html class="ie8-andlower ancient" lang="da"><![endif]-->
+<!--[if IE 9]><html class="ie9 oldie" lang="da"><![endif]-->
+<!--[if IE 10]><html class="ie10" lang="da"><![endif]-->
+<!--[if IE 11]><html class="ie11" lang="da"><![endif]-->
+<!--[if !IE]><html lang="da"><![endif]-->
+<head>
+    <meta charset="UTF-8" />
+    <!-- Browser/viewport compat stuff -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="format-detection" content="telephone=no" />
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <title>Dart Conference</title>
+    <meta name="title" content="Dart Conference" />
+    <meta name="description" content="DartConf is the premier event that connects Flutter and AngularDart developers together, and to the Google engineers who work on these projects." />
+    <!-- Open graph -->
+    <meta property="og:title" content="Dart Conference" />
+    <meta property="og:description" content="Dart Conference is the premier event that connects Flutter and AngularDart developers together, and to the Google engineers who work on these projects." />
+    <meta property="og:image" content="https://events.dartlang.org/2018/images/dartconf-ogimg.jpg"/>
+
+    <!-- icons -->
+    <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png" />
+    <link rel="shortcut icon" type="image/ico" href="img/favicon.ico" />
+
+    <!-- Styles -->
+    <link href="css/master.min.css" rel="stylesheet" type="text/css" media="all"/>
+
+     <script type="application/ld+json">
+        {
+          "@context": "http://schema.org",
+          "@type": "Event",
+          "location": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Venice",
+              "addressRegion": "CA",
+              "postalCode": "90291",
+              "streetAddress": "320 Hampton Dr"
+            },
+            "name": "Dart Conferencef 2018",
+            "image": "https://events.dartlang.org/2018/images/dartconf-ogimg.jpg"
+          },
+          "name": "Dart Conference 2018",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "url": "https://docs.google.com/forms/d/e/1FAIpQLScJjXqEuhB9_OoBNXM6LJIzWuPGy6xOgKBfh27samkFaEeE7Q/viewform"
+          },
+          "startDate": "2018-01-23T09:00"
+        }
+        </script>
+</head>
+<body>
+
+    <div class="site">
+
+        <header class="site-head" id="site-head-js">
+            <nav class="navigation-main">
+                <a href="/" class="site-logo"><img src="images/dartconf-logo-white.svg" alt="" class="site-logo__image"></a>
+                <a href="#" class="navigation-main__register button button--blue watchLiveTalks" data-video-id="IMNUiC2O9M8" data-type="youtube"><span class="navigation-main__register-text">Watch talks</span></a>
+                <button type="button" class="navigation-main__trigger" id="navigation-main__trigger-js">Conference</button>
+                <ul class="navigation-main__list " id="navigation-main-js">
+                    <li class="navigation-main__item"><a href="#about" class="navigation-main__link active">Conference</a></li>
+                    <li class="navigation-main__item"><a href="#speakers" class="navigation-main__link">Speakers</a></li>
+                    <li class="navigation-main__item"><a href="#venue" class="navigation-main__link">Venue</a></li>
+                    <li class="navigation-main__item"><a href="#info" class="navigation-main__link">Info</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="site-main">
+            <section class="intro" id="intro" name="Intro">
+                <img src="images/dartconf-logo-neon.png" alt="Dart Conference 2018" class="intro-dartconf">
+            </section>
+            <section class="about about--phase-three" id="about" name="Conference">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col--md-6">
+                            <h1>Dart Conference</h1>
+                            <h4>January 23-24, 2018</h4>
+                            <p>Yeahhh the <strong>DartConf</strong> is NOW!</p>
+                            <p>If you want to watch a speak again or can’t be there in person speaks, don’t worry. All Speaks and merchandise are available online.</p>
+                            <button class="button button--pink button--pink-ghost watchLiveTalks" data-text="Watch talks" data-video-id="IMNUiC2O9M8" data-type="youtube">Watch talks</button>
+                            <button class="button button--blue button--blue-ghost" data-text="Grab your merch">Grab your merch</button>
+                            <figure class="boxed-image left pc80">
+                                <img src="images/dartconf-image-02.jpg">
+                            </figure>
+                        </div>
+                        <div class="col col--md-6">
+                            <figure class="boxed-image right pc60">
+                                <img src="images/dartconf-image-01.jpg">
+                            </figure>
+                            <div class="row">
+                                <div class="col col--xs-6 col--sm-4 about-info">
+                                    <img src="images/dartconf_icon_location.png" class="about-info-icon" alt="Venice Beach, LA">
+                                    <span class="about-info-text">Venice Beach, LA</span>
+                                </div>
+                                <div class="col col--xs-6 col--sm-4 about-info">
+                                    <img src="images/dartconf_icon_track.png" class="about-info-icon" alt="1 Track">
+                                    <span class="about-info-text">1 Track</span>
+                                </div>
+                                <div class="col col--xs-6 col--sm-4 about-info">
+                                    <img src="images/dartconf_icon_days.png" class="about-info-icon" alt="2 Days">
+                                    <span class="about-info-text">2 Days</span>
+                                </div>
+                                <div class="col col--xs-6 col--sm-4 about-info">
+                                    <img src="images/dartconf_icon_party.png" class="about-info-icon" alt="1 Party">
+                                    <span class="about-info-text">1 Party</span>
+                                </div>
+                                <div class="col col--xs-6 col--sm-4 about-info">
+                                    <img src="images/dartconf_icon_talks.png" class="about-info-icon" alt="+16 Talks">
+                                    <span class="about-info-text">+16 Talks</span>
+                                </div>
+                                <div class="col col--xs-6 col--sm-4 about-info">
+                                    <img src="images/dartconf_icon_attendees.png" class="about-info-icon" alt="350 Attendees">
+                                    <span class="about-info-text">350 Attendees</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="speakers" id="speakers" name="Speakers">
+                <div class="container">
+                    <div class="row">
+
+                        <!-- Speaker -->
+                        <div class="col col--xs-6 col--ms-4 col--sm-3">
+                            <div class="speaker speaker--phase-two" data-element="#speaker-content-1">
+                                <div class="speaker--phase-two__image">
+                                    <img src="images/speakers/speaker-1-name.jpg" alt="Speaker Name">
+                                </div>
+                                <div class="speaker--phase-two__details">
+                                    <p class="speaker--phase-two__details-subject">What we learned build StartPlanner with Dart</p>
+                                    <p class="speaker--phase-two__details-name">
+                                        Andreas Sandholm
+                                        <span>Company name</span>
+                                    </p>
+
+                                    <!-- Description for overlay -->
+                                    <div class="speaker--phase-two__details-description" id="speaker-content-1">
+                                        <!-- Image -->
+                                        <div class="details-description__image">
+                                            <img src="images/speakers/speaker-1-name.jpg" alt="Speaker Name">
+                                            <h3>Anders Sandholm
+                                                <span>Company name</span>
+                                            </h3>
+                                            <div class="speaker-social-platforms">
+                                                <div class="speaker-social-platforms__logo">
+                                                    <a href="#" title=""><img src="images/twitter-logo.svg" alt=""></a>
+                                                </div>
+                                                <div class="speaker-social-platforms__logo">
+                                                    <a href="#" title=""><img src="images/linkedin-logo.svg" alt=""></a>
+                                                </div>
+                                                <div class="speaker-social-platforms__logo">
+                                                    <a href="#" title=""><img src="images/mail-logo.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Text -->
+                                        <div class="details-description__text">
+                                            <h3 class="title">What ve learned build StartPlanner with Dart</h3>
+
+                                            <p>A product roadmap is not a release plan, nor a Gantt chart, so why do so many product teams conflate the two? Using case studies and personal experience, this talk walks through what a roadmaps is and how teams can leverage them for a successful product future.</p>
+
+                                            <h4>About Name</h4>
+                                            <p>If you're a designer in 2017, chances are you fully integrate data and KPI in your daily life. That being said, if design’s first role is all about solving issues and making everybody's life easier through on point and smart decisions.</p>
+                                        </div>
+                                    </div>
+                                    <!-- End description -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speaker -->
+                        <div class="col col--xs-6 col--ms-4 col--sm-3">
+                            <div class="speaker speaker--phase-two" data-element="#speaker-content-2">
+                                <div class="speaker--phase-two__image">
+                                    <img src="images/speakers/speaker-2-name.jpg" alt="Speaker Name">
+                                </div>
+                                <div class="speaker--phase-two__details">
+                                    <p class="speaker--phase-two__details-subject">Dart in 2017 and beyond</p>
+                                    <p class="speaker--phase-two__details-name">
+                                        Dan Groove
+                                        <span>Company name</span>
+                                    </p>
+
+                                    <!-- Description for overlay -->
+                                    <div class="speaker--phase-two__details-description" id="speaker-content-2">
+                                        <!-- Image -->
+                                        <div class="details-description__image">
+                                            <img src="images/speakers/speaker-2-name.jpg" alt="Speaker Name">
+                                            <h3>Dan Groove
+                                                <span>Company name</span>
+                                            </h3>
+                                            <div class="speaker-social-platforms">
+                                                <div class="speaker-social-platforms__logo">
+                                                    <a href="#" title=""><img src="images/twitter-logo.svg" alt=""></a>
+                                                </div>
+                                                <div class="speaker-social-platforms__logo">
+                                                    <a href="#" title=""><img src="images/linkedin-logo.svg" alt=""></a>
+                                                </div>
+                                                <div class="speaker-social-platforms__logo">
+                                                    <a href="#" title=""><img src="images/mail-logo.svg" alt=""></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Text -->
+                                        <div class="details-description__text">
+                                            <h3>Now something completely different!</h3>
+
+                                            <p>A product roadmap is not a release plan, nor a Gantt chart, so why do so many product teams conflate the two? Using case studies and personal experience, this talk walks through what a roadmaps is and how teams can leverage them for a successful product future.</p>
+
+                                            <h4>About Name</h4>
+                                            <p>If you're a designer in 2017, chances are you fully integrate data and KPI in your daily life. That being said, if design’s first role is all about solving issues and making everybody's life easier through on point and smart decisions.</p>
+                                        </div>
+                                    </div>
+                                    <!-- End description -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speaker -->
+                        <div class="col col--xs-6 col--ms-4 col--sm-3">
+                            <div class="speaker speaker--phase-two">
+                                <div class="speaker--phase-two__image">
+                                    <img src="images/speakers/speaker-1-name.jpg" alt="Speaker Name">
+                                </div>
+                                <div class="speaker--phase-two__details">
+                                    <p class="speaker--phase-two__details-subject">What we learned build StartPlanner with Dart</p>
+                                    <p class="speaker--phase-two__details-name">
+                                        Andreas Sandholm
+                                        <span>Company name</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speaker -->
+                        <div class="col col--xs-6 col--ms-4 col--sm-3">
+                            <div class="speaker speaker--phase-two">
+                                <div class="speaker--phase-two__image">
+                                    <img src="images/speakers/speaker-2-name.jpg" alt="Speaker Name">
+                                </div>
+                                <div class="speaker--phase-two__details">
+                                    <p class="speaker--phase-two__details-subject">Dart in 2017 and beyond</p>
+                                    <p class="speaker--phase-two__details-name">
+                                        Dan Groove
+                                        <span>Company name</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speaker -->
+                        <div class="col col--xs-6 col--ms-4 col--sm-3">
+                            <div class="speaker speaker--phase-two">
+                                <div class="speaker--phase-two__image">
+                                    <img src="images/speakers/speaker-1-name.jpg" alt="Speaker Name">
+                                </div>
+                                <div class="speaker--phase-two__details">
+                                    <p class="speaker--phase-two__details-subject">What we learned build StartPlanner with Dart</p>
+                                    <p class="speaker--phase-two__details-name">
+                                        Andreas Sandholm
+                                        <span>Company name</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speaker -->
+                        <div class="col col--xs-6 col--ms-4 col--sm-3">
+                            <div class="speaker speaker--phase-two">
+                                <div class="speaker--phase-two__image">
+                                    <img src="images/speakers/speaker-2-name.jpg" alt="Speaker Name">
+                                </div>
+                                <div class="speaker--phase-two__details">
+                                    <p class="speaker--phase-two__details-subject">Dart in 2017 and beyond</p>
+                                    <p class="speaker--phase-two__details-name">
+                                        Dan Groove
+                                        <span>Company name</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speaker -->
+                        <div class="col col--xs-6 col--ms-4 col--sm-3">
+                            <div class="speaker speaker--phase-two">
+                                <div class="speaker--phase-two__image">
+                                    <img src="images/speakers/speaker-1-name.jpg" alt="Speaker Name">
+                                </div>
+                                <div class="speaker--phase-two__details">
+                                    <p class="speaker--phase-two__details-subject">What we learned build StartPlanner with Dart</p>
+                                    <p class="speaker--phase-two__details-name">
+                                        Andreas Sandholm
+                                        <span>Company name</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Speaker -->
+                        <div class="col col--xs-6 col--ms-4 col--sm-3">
+                            <div class="speaker speaker--phase-two">
+                                <div class="speaker--phase-two__image">
+                                    <img src="images/speakers/speaker-2-name.jpg" alt="Speaker Name">
+                                </div>
+                                <div class="speaker--phase-two__details">
+                                    <p class="speaker--phase-two__details-subject">Dart in 2017 and beyond</p>
+                                    <p class="speaker--phase-two__details-name">
+                                        Dan Groove
+                                        <span>Company name</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Additional speakers -->
+                        <div class="speakers-additional">
+                            <div class="speakers-additional__inner">
+                                <!-- Speaker -->
+                                <div class="col col--xs-6 col--ms-4 col--sm-3">
+                                    <div class="speaker speaker--phase-two">
+                                        <div class="speaker--phase-two__image">
+                                            <img src="images/speakers/speaker-1-name.jpg" alt="Speaker Name">
+                                        </div>
+                                        <div class="speaker--phase-two__details">
+                                            <p class="speaker--phase-two__details-subject">What we learned build StartPlanner with Dart</p>
+                                            <p class="speaker--phase-two__details-name">
+                                                Andreas Sandholm
+                                                <span>Company name</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col col--xs-6 col--ms-4 col--sm-3">
+                                    <div class="speaker speaker--phase-two">
+                                        <div class="speaker--phase-two__image">
+                                            <img src="images/speakers/speaker-2-name.jpg" alt="Speaker Name">
+                                        </div>
+                                        <div class="speaker--phase-two__details">
+                                            <p class="speaker--phase-two__details-subject">Dart in 2017 and beyond</p>
+                                            <p class="speaker--phase-two__details-name">
+                                                Dan Groove
+                                                <span>Company name</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col col--xs-6 col--ms-4 col--sm-3">
+                                    <div class="speaker speaker--phase-two">
+                                        <div class="speaker--phase-two__image">
+                                            <img src="images/speakers/speaker-1-name.jpg" alt="Speaker Name">
+                                        </div>
+                                        <div class="speaker--phase-two__details">
+                                            <p class="speaker--phase-two__details-subject">What we learned build StartPlanner with Dart</p>
+                                            <p class="speaker--phase-two__details-name">
+                                                Andreas Sandholm
+                                                <span>Company name</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Speaker -->
+                                <div class="col col--xs-6 col--ms-4 col--sm-3">
+                                    <div class="speaker speaker--phase-two">
+                                        <div class="speaker--phase-two__image">
+                                            <img src="images/speakers/speaker-2-name.jpg" alt="Speaker Name">
+                                        </div>
+                                        <div class="speaker--phase-two__details">
+                                            <p class="speaker--phase-two__details-subject">Dart in 2017 and beyond</p>
+                                            <p class="speaker--phase-two__details-name">
+                                                Dan Groove
+                                                <span>Company name</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col col--xs-12">
+                            <div class="speakers-view-all">
+                                <button class="button button--pink show-additional-speakers-button">Show all speakers</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="schedule">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col--xs-12">
+                            <ul class="schedule-tabs">
+                                <li class="schedule-tabs__item schedule-tabs__item--current" data-tab="schedule-tab-1"><span>Day 1</span> January 23</li>
+                                <li class="schedule-tabs__item" data-tab="schedule-tab-2"><span>Day 2</span> January 24</li>
+                            </ul>
+
+                            <div id="schedule-tab-1" class="schedule-tabs-content schedule-tabs-content--current">
+
+                                <table class="schedule-table schedule-table--phase-three">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <span>10:00</span>
+                                                <!-- Video link when ready -->
+                                                <a href="https://www.youtube.com/watch?v=JXcNqXbCa0E" title="">
+                                                    <img src="images/video-player-icon.svg" class="watch-talk-icon" alt="Watch this talk">
+                                                </a>
+                                            </td>
+                                            <td><span>KEYNOTE</span> Dart in 2017 and beyond</td>
+                                            <td>Kasper Lund <span>Company name</span></td>
+                                            <td>Dan Groove <span>Company name</span></td>
+                                            <td>Anders Sandhold <span>Company name</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                10:30
+                                                <!-- Video link when ready -->
+                                                <a href="https://www.youtube.com/watch?v=8ixOkJOXdMo" title="">
+                                                    <img src="images/video-player-icon.svg" class="watch-talk-icon" alt="Watch this talk">
+                                                </a>
+                                            </td>
+                                            <td>Webdevelopment using AngularDart 2.0</td>
+                                            <td>Ferhat Buyukkokten <span>Company name</span></td>
+                                            <td colspan="2">Matan Lurey <span>Company name</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>11:00</td>
+                                            <td>Sound Dart</td>
+                                            <td colspan="3">Leaf Petersen <span>Company name</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>11:30</span></td>
+                                            <td><span>BREAK</span></td>
+                                            <td colspan="3">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                12:00
+                                                <!-- Video link when ready -->
+                                                <a href="https://www.youtube.com/watch?v=IMNUiC2O9M8" title="">
+                                                    <img src="images/video-player-icon.svg" class="watch-talk-icon" alt="Watch this talk">
+                                                </a>
+                                            </td>
+                                            <td>Fast web development width DDC</td>
+                                            <td colspan="3">Vijay Menon <span>Company name</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>12:30</td>
+                                            <td>Dart’s new JS interoperability</td>
+                                            <td colspan="3">Jacob Richman <span>Company name</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>13:15</span></td>
+                                            <td><span>LUNCH</span></td>
+                                            <td colspan="3">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>14:30</td>
+                                            <td>Angular Components</td>
+                                            <td colspan="3">Ted Sander <span>Company name</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15:00</td>
+                                            <td>AdSense Material Design</td>
+                                            <td colspan="3">Daniel White <span>Company name</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>15:30</td>
+                                            <td>The YouTube skip button and object models</td>
+                                            <td colspan="3">David Morgan <span>Company name</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>16:00</span></td>
+                                            <td><span>BREAK</span></td>
+                                            <td colspan="3">&nbsp;</td>
+                                        </tr>
+                                        <tr>
+                                            <td>16.30</td>
+                                            <td>Overflow: a large scale JS to AngularDart rewrite</td>
+                                            <td>Fasial Abid <span>Company name</span></td>
+                                            <td colspan="2">Kevin Birch <span>Company name</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>17:00</td>
+                                            <td>How to build a Dart and Firebase app in 30 min</td>
+                                            <td>Jana Moudra <span>Company name</span></td>
+                                            <td colspan="2">Kevin Moore <span>Company name</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>17:30</td>
+                                            <td>Lightning talks</td>
+                                            <td colspan="3">Various</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>18:00</span></td>
+                                            <td><span>AFTER PARTY</span></td>
+                                            <td colspan="3">&nbsp;</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+                            <div id="schedule-tab-2" class="schedule-tabs-content">
+                                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="venue " id="venue" name="Venue">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col--xs-12 col--sm-6 col--sm-offset-3">
+                            <h2>Venue</h2>
+                            <p>The Dart Conference will take place at the beautiful Google Los Angeles campus, just 5 minutes walk from the creative and the artistic Venice Beach. </p>
+                            <p>The campus is located in the renovated iconic Frank Gehry-designed Binocular Building, a uniquely hi-tech styled campus that includes an amazing production space as well as the beautiful outdoor courtyard.</p>
+                        </div>
+                        <div class="col col--xs-12">
+                            <div class="boxed-image">
+                                <div class="gallery">
+                                    <figure class="gallery__image dh100" style="background-image:url('images/venice-01.jpg');"></figure>
+                                    <figure class="gallery__image dh50" style="background-image:url('images/venice-02.jpg');"></figure>
+                                    <figure class="gallery__image dh50" style="background-image:url('images/venice-03.jpg');"></figure>
+                                    <figure class="gallery__image dh33" style="background-image:url('images/venice-04.jpg');"></figure>
+                                    <figure class="gallery__image dh33" style="background-image:url('images/venice-05.jpg');"></figure>
+                                    <figure class="gallery__image dh33" style="background-image:url('images/venice-06.jpg');"></figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col--xs-12">
+                            <p><strong>Google Los Angeles</strong><br>
+                            320 Hampton Dr, Venice, CA 90291<br>
+                            United States</p>
+                            <a href="https://www.google.dk/maps/place/320+Hampton+Dr,+Venice,+CA+90291,+USA/@33.9959841,-118.4767034,18.88z/data=!4m5!3m4!1s0x80c2bacf6ca7a8d9:0xd488fe0ca6dc123!8m2!3d33.9960011!4d-118.4761215" data-text="View in Google Maps" class="button button--blue button--blue-ghost">View in Google Maps</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="info " id="info" name="Info">
+                <div class="container">
+                    <div class="row">
+                        <div class="info-wrapper">
+                            <div class="col col--xs-12 col--sm-3 info-box">
+                                <p><strong>Date</strong><br>
+                                January 23-24<br>
+                                2018</p>
+                            </div>
+                            <div class="col col--xs-12 col--sm-3 info-box">
+                                <p><strong>Venue</strong><br>
+                                Google Los Angeles<br>
+                                320 Hampton Dr, Venice, CA 90291</p>
+                            </div>
+                            <div class="col col--xs-12 col--sm-3 info-box">
+                                <p><strong>Accommodation</strong><br>
+                                We recommend<br>Le Méridien Delfina<br>
+                                <a href="https://www.starwoodmeeting.com/events/start.action?id=1709111541&key=2FEF4CF4">Show info or book here</a></p>
+                            </div>
+                            <div class="col col--xs-12 col--sm-3 info-box">
+                                <p><strong>Price</strong><br>
+                                It’s a free conference<br>
+                                with limited seats</p>
+                            </div>
+                        </div>
+                        <div class="col col--xs-12 col--md-6 col--md-offset-3">
+                            <h2>Attend Dart Conference</h2>
+                            <p><strong>Registration for DartConf’18 is closed</strong> <br>All seats are taken</p>
+                            <button class="button button--disabled">Sold out</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="streaming" id="streaming" name="Streaming">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col--xs-12">
+
+                            <h2>Can’t join in person?</h2>
+                            <p>Don’t worry! Like last year's <a href="/2016/summit/">Dart Summit 2016</a> sessions, DartConf talks will be live streamed, recorded, and uploaded to the Google Developer channel on&nbsp;YouTube.</p>
+                            <p><a href="#" data-text="Watch talks" class="button button--pink button--pink-ghost watchLiveTalks" data-video-id="IMNUiC2O9M8" data-type="youtube">Watch talks</a></p>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-foot">
+            <div class="container">
+                <div class="row">
+                    <div class="col col--xs-12">
+                        <img src="images/dartconf-logo-white.svg" alt="" class="site-foot__logo">
+                        <img src="images/dartconf-palmes.png" class="site-foot__palmes">
+                    </div>
+                    <div class="col col--xs-12 ">
+                        <time datetime="2018-01-23 09:00" class="site-foot__date">January 23-24, 2018</time>
+                        <address class="site-foot__address">Google Los Angeles, 320 Hampton Dr, Venice, CA 90291, United States</address>
+                        <div class="site-foot__contact">
+                            <ul>
+                                <li><a href="mailto:dartconf-questions@googlegroups.com" class="site-foot__contact-email">Send us an email</a></li>
+                                <!--<li><a href="" class="site-foot__contact-youtube">YouTube</a></li>-->
+                                <li><a href="https://twitter.com/dart_lang" class="site-foot__contact-twitter">Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="scripts/master.min.js"></script>
+</body>
+</html>
