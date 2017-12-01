@@ -14,7 +14,7 @@ before_script:
   - chmod +x ./deploy/deploy-firebase.sh
 
 script:
-  - make
+  - make build_travis
   - ./deploy/linkcheck.sh
 
 deploy:
