@@ -5,6 +5,8 @@ install:
   - npm install -g npm@2
   - npm install -g firebase-tools
   - npm install -g bower
+  - npm install -g gulp-cli
+  - npm install -g superstatic
   - pub global activate linkcheck
 
 before_script:
@@ -12,7 +14,7 @@ before_script:
   - chmod +x ./deploy/deploy-firebase.sh
 
 script:
-  - make
+  - make build_travis
   - ./deploy/linkcheck.sh
 
 deploy:

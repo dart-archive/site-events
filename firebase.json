@@ -5,7 +5,7 @@
     "redirects": [
       {
         "source": "/",
-        "destination": "/2016/summit/",
+        "destination": "/2018/dartconf/",
         "type": 302
       }
     ]
